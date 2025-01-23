@@ -5,9 +5,9 @@
   "background_color": "#ffffff",
   "display": "standalone",
   "orientation": "Any",
-  "start_url": "https://hagarsaeed25.github.io/Azkar//",
-  "id":"/Azkar/",
-  "scope": "/",
+  "start_url": "https://hagarsaeed25.github.io/Azkar/",
+  "id":"https://hagarsaeed25.github.io/Azkar/",
+  "scope":"https://hagarsaeed25.github.io/Azkar/",
   "icons": [
     {
       "src": "assets/icons/icon-72x72.png",
