@@ -1,96 +1,101 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-:root{
-  --text-color :#ffff;
-  --bg-color:#CBA35C;
-  --section-title-color:#CBA35C;
-  --section-padding:70px;
-  --text-color-alt:#09122C;
+:root {
+  --text-color: #ffff;
+  --bg-color: #cba35c;
+  --section-title-color: #cba35c;
+  --section-padding: 70px;
+  --text-color-alt: #09122c;
+  --btn-color:#c0954b;
+  --btn-color-hover: #96763f;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
-body{
+body {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
-body.dark-theme{
-  --text-color :white;
-  --bg-color:#181C14;
-  --section-title-color:#181C14;
-  --section-padding:70px;
-  --text-color-alt:#CBA35C;
+body.dark-theme {
+  --text-color: white;
+  --bg-color: #181c14;
+  --section-title-color: #181c14;
+  --section-padding: 70px;
+  --text-color-alt: #cba35c;
+  --btn-color:#000000;
+ --btn-color-hover:#0e110c;
+
 }
-section{
-  padding: var(--section-padding) 0 ;
+section {
+  padding: var(--section-padding) 0;
 }
-.container{
-  padding: 0 15px ;
+.container {
+  padding: 0 15px;
   margin: auto;
 }
-@media (min-width:768px) {
-  .container{
-    width:750px
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
   }
 }
-@media (min-width:992px) {
-  .container{
-    width:970px
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
   }
 }
-@media (min-width:1200px) {
-  .container{
-    width:1190px
+@media (min-width: 1200px) {
+  .container {
+    width: 1190px;
   }
 }
-img{
+img {
   max-width: 100%;
 }
-a{
+a {
   text-decoration: none;
 }
-ul{
+ul {
   list-style: none;
 }
-header{
+header {
   position: sticky;
   top: 0;
   padding: 20px 0;
   background-color: var(--bg-color);
 }
-header .container{
- display: flex;
- align-items: center;
- justify-content: space-between; 
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-header .container nav{
+header .container nav {
   display: flex;
   align-items: center;
 }
-header .container .logo{
+header .container .logo {
   font-size: 40px;
   font-weight: bold;
-  color:var(--text-color-alt);
+  color: var(--text-color-alt);
 }
 header nav ul li a {
-color: var(--text-color);
+  color: var(--text-color);
 
-font-weight: bold;
+  font-weight: bold;
 }
-header nav ul li a:hover{
-  color:var(--text-color-alt);
+header nav ul li a:hover {
+  color: var(--text-color-alt);
 }
-header img{
+header img {
   width: 35px;
   cursor: pointer;
   margin: 0 8px;
 }
-@media (max-width:991px) {
-  header nav ul.open{
-display: block;
+@media (max-width: 991px) {
+  header nav ul.open {
+    display: block;
   }
   header nav ul {
     display: none;
@@ -99,26 +104,26 @@ display: block;
     left: 0;
     background-color: var(--bg-color);
   }
-  header nav ul li:not(:last-child){
-border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  header nav ul li:not(:last-child) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
-  header nav ul li a{
+  header nav ul li a {
     display: block;
     padding: 10px;
   }
 }
-@media (min-width:992px) {
-  header .menu{
+@media (min-width: 992px) {
+  header .menu {
     display: none;
   }
-  header nav ul{
+  header nav ul {
     display: flex;
     gap: 30px;
   }
 }
 section h2 {
-font-size: 35px;
-margin-bottom: 15px;
+  font-size: 35px;
+  margin-bottom: 15px;
   font-weight: bold;
   text-align: center;
   color: var(--section-title-color);
@@ -128,7 +133,7 @@ section ol li {
   color: var(--text-color);
   background-color: var(--bg-color);
   padding: 20px;
-  border-radius: 4px; 
+  border-radius: 4px;
 }
 section ol li p {
   display: flex;
@@ -138,8 +143,13 @@ section ol li p {
   color: var(--text-color);
   line-height: 1.5;
 }
-section ol li p .count {
-padding: 15px;
-border-radius: 5px;
-border: 1px solid var(--bg-color);
+section .container ol li .count {
+  padding: 10px;
+  height: 40px;
+  border-radius: 2px;
+  background-color: var(--btn-color);
+  cursor: pointer;
+}
+section .container ol li .count:hover{
+background-color: var( --btn-color-hover);
 }

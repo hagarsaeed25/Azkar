@@ -26,7 +26,7 @@ fetch(`https://www.myjsons.com/v/b7d03829`)
     let evening = "";
     for (let i = 0; i < data["أذكار المساء"].length; i++) {
       evening += `
-     <li>
+    <li>
       <p><span>${data["أذكار المساء"][i].content}</span> <span class="count">(${data["أذكار المساء"][i].count})</span></p>
   </li>`;
 }
